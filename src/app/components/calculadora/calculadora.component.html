@@ -1,0 +1,30 @@
+<div class="calculadora">
+  <div class="display" id="display">{{ inputDisplay }}</div>
+  <div class="calculadora-buttons">
+    <button id="limparDisplay" (click)="limpar()">CE</button>
+    <button id="limparCalculo" (click)="limpar()">C</button>
+    <button id="backspace" (click)="apagar()">«</button>
+    <button id="operadorDividir" (click)="inserirSimbolo('/')">/</button>
+
+    <button id="tecla7" (click)="inserirNumero('7')">7</button>
+    <button id="tecla8" (click)="inserirNumero('8')">8</button>
+    <button id="tecla9" (click)="inserirNumero('9')">9</button>
+    <button id="operadorMultiplicar" (click)="inserirSimbolo('*')">*</button>
+
+    <button id="tecla4" (click)="inserirNumero('4')">4</button>
+    <button id="tecla5" (click)="inserirNumero('5')">5</button>
+    <button id="tecla6" (click)="inserirNumero('6')">6</button>
+    <button id="operadorSubtrair" (click)="inserirSimbolo('-')">-</button>
+
+    <button id="tecla1" (click)="inserirNumero('1')">1</button>
+    <button id="tecla2" (click)="inserirNumero('2')">2</button>
+    <button id="tecla3" (click)="inserirNumero('3')">3</button>
+    <button id="operadorSoma" (click)="inserirSimbolo('+')">+</button>
+
+    <button id="tecla0" (click)="inserirNumero('0')">0</button>
+    <button id="decimal" (click)="inserirSimbolo('.')">.</button>
+    <div class="div-igual">
+      <button id="igual" (click)="calcular()">=</button>
+    </div>
+  </div>
+</div>
